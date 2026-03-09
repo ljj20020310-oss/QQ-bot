@@ -1,0 +1,29 @@
+{
+  "llm": {
+    "profiles": {
+      "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "anthropic/claude-haiku-4-5"
+      },
+      "workspace": "~/.openclaw/workspace"
+    }
+  },
+  "tools": {
+    "profile": "full"
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "auth": {
+      "token": "YOUR_GATEWAY_TOKEN_HERE"
+    }
+  }
+}
